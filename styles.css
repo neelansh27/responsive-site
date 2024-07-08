@@ -1,0 +1,58 @@
+:root {
+  --bg-0: #6311a1;
+  --bg-1: #4d27c5;
+  --bg-2: #0e1138;
+  --bg-3: #16263a;
+  --bg-4: #124c9c;
+  --bg-5: #012b8c; 
+  --bg-6: #00834d;
+  --bg-secondary-0: #c9c9cb;
+  --bg-secondary-1: #1c035d;
+  --bg-secondary-2: #141646;
+  --bg-secondary-3: #0d131b; 
+  --bg-secondary-4: #27d0df;
+  --bg-secondary-5: none;
+  --bg-secondary-6: #00b76b;
+}
+*{
+  box-sizing: border-box;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  display: flex;
+  background-color: #444;
+  width: 100vw;
+  height: 100vh;
+}
+.info {
+ width: 50%;
+ background: var(--bg-1);
+ transition: background 0.6s ease-in-out;
+}
+.assets{
+  background: var(--bg-secondary-0);
+  flex-grow:1; 
+}
+ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+li{
+  color: white;
+  transition: transform 1s;
+}
+.super-container{
+  height: 1.4rem;
+}
+.super-text {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+.info{
+  position: relative;
+}
