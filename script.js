@@ -4,6 +4,10 @@ const info = document.querySelector('.info')
 const assets = document.querySelector('.assets')
 const suptext= document.querySelectorAll('.scroll-item')
 const circle = document.querySelector('.circle')
+const svgPath = document.querySelector('svg .transrgwht')
+const svgBorders = document.querySelectorAll(".dotsstro")
+const svgBalls = document.querySelectorAll(".dotsst")
+const pathLengths=[0,130,280,410,530,680,810]
 let index=0;
 
 document.addEventListener('wheel', scrollHandle);
@@ -12,30 +16,43 @@ document.addEventListener('wheel', scrollHandle);
 function scrollHandle(event) {
   const directionUp =  checkScrollDirectionIsUp(event);
     if (directionUp) {
-    if (index>0){
-      index-=1;
-      // move the list elements of scrollable text
-      suptext.forEach(e=>{
-        e.style.transform=`translateY(-${index*100}%)`
-      })
-      assetSwitch(index,directionUp);
-    }   
-  } else if (index<6){
-      index+=1;
-      // move the list elements of scrollable text
-      suptext.forEach(e=>{
-        e.style.transform=`translateY(-${index*100}%)`
-      })
-      assetSwitch(index,directionUp);
+      handleIndexChange(index-1)
+  } else {
+      handleIndexChange(index+1)
     } 
+
+}
+
+function handleIndexChange(idx){
+  if (idx==7 || idx==-1 || idx==index) return;
+  let i=index;
+  index=idx;
+  direction = idx<i;
+  // changing index based on direction
+  if (direction){
+    for (i;i>index;i--){
+      svgBalls[i].style.fill='rgba(255,255,255,0.4)'
+      svgBorders[i].style.opacity=0.4;
+    }
+  } else {
+    for (i;i<=index;i++){
+      svgBalls[i].style.fill='var(--ball-color)';
+      svgBorders[i].style.opacity=1;
+    }
+  }
+
+  suptext.forEach(e=>{
+    e.style.transform=`translateY(-${index*100}%)`
+  })
+
+  svgPath.style.strokeDasharray=`${pathLengths[index]},1000`
+  assetSwitch(index,direction);
 
   // created css variables based on index
   info.style.background = `var(--bg-${index})`
   circle.style.background = `var(--bg-${index})`
   assets.style.background = `var(--bg-secondary-${index})`
-  console.log(index);
 }
-
 
 // This switch handles image switching when we are scrolling down
 function assetSwitch(index,direction){
@@ -166,7 +183,6 @@ function assetSwitch(index,direction){
 }
 
 function checkScrollDirectionIsUp(event) {
-  console.log(event.wheelDelta)
   if (event.wheelDelta) {
     return event.wheelDelta > 0;
   }

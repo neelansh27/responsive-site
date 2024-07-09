@@ -13,6 +13,7 @@
   --bg-secondary-4: #27d0df;
   --bg-secondary-5: url('./assets/interior.jpg') 0/cover no-repeat;
   --bg-secondary-6: #00b76b;
+  --ball-color: rgb(0, 146, 255);
 }
 *{
   box-sizing: border-box;
@@ -40,21 +41,36 @@ html,body{
 .ndisplay{
   visibility: hidden;
 }
-.circle{
+.wrapper,.circle {
   position: absolute;
   top: 10vh;
-  z-index: 10;
   right: -50%;
   transform: translateX(-60%);
   border-radius: 50%;
   height: 25vw;
+  aspect-ratio: 1/1;
+}
+.wrapper {
+  z-index: 100;
+}
+
+.wrapper svg{
+  position: absolute;
+  z-index: 100;
+}
+
+svg .transrgwht{
+ transition: stroke-dasharray 1s ease-in-out;
+}
+
+.circle{
   display: flex;
+  z-index: 10;
   background: var(--bg-0);
   transition: inherit;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  aspect-ratio: 1/1;
   overflow: visible;
 }
 .assets{
@@ -94,9 +110,6 @@ li{
   font-size: 1.4rem;
 }
 .text-slider{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   overflow: visible !important;
 }
 .text-slider ul {
@@ -118,7 +131,7 @@ li{
   overflow-y: hidden;
 }
 .large {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 600;
 }
 .bottom-left{
@@ -148,7 +161,6 @@ li{
   transform: translate(50%,50%)
 }
 #img3{
-  position: absolute;
   bottom: 0;
   left: 10vw;
   width: 30%;
@@ -171,7 +183,9 @@ li{
   transform: translateY(50%);
   left: 10vw;
 }
-
+.path{
+  background: none;;
+}
 #img6 {
   width: 28%;
   min-width: 250px;

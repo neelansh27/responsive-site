@@ -1,113 +1,397 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Responsive Site</title>
-  <link rel="stylesheet" type="text/css" href="./styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js" defer></script>
-  <script src='./script.js' defer></script>
-</head>
-<body>
-    <section class='container'>
-        <div class="info">
-            <div class="circle">
-              
-            <div class="text-slider">
-              <ul class='medium-container align-center'>
-                <li class="scroll-item medium">&nbsp;</li>
-                <li class="scroll-item medium">The next big</li>
-                <li class="scroll-item medium">Powered by advance</li>
-                <li class="scroll-item medium">Redefining</li>
-                <li class="scroll-item medium">Text Headline</li>
-                <li class="scroll-item medium">Developing ERP Solution for</li>
-                <li class="scroll-item medium">Biggest Classifieds</li>
-              </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Site</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"
+      defer
+    ></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
 
-              <ul class='large-container align-center'>
-                <li class="scroll-item large">25M+ Downloads</li>
-                <li class="scroll-item large">Blockchain</li>
-                <li class="scroll-item large">NASA</li>
-                <li class="scroll-item large"> UX Strategy</li>
-                <li class="scroll-item large">Text Headline</li>
-                <li class="scroll-item large">Text Headline</li>
-                <li class="scroll-item large">East Asia</li>
-              </ul>
+    <section class="container">
+      <div class="info">
+          <div class="wrapper">
+            <svg
+              version="1.1"
+              id="transring"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 414 414"
+              style="
+                enable-background: new 0 0 414 414;
+                background-color: transparent;
+              "
+              xml:space="preserve"
+            >
+              <path
+                id="Transparent_Ring"
+                class="transrg"
+                style="
+                  opacity: 0.4;
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                  enable-background: new;
+                "
+                d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+                  c-47.8,0-91-19.4-122.3-50.7"
+              ></path>
 
-              <ul class='subscript-container align-right'>
-                <li class="scroll-item text-end">on appstore & google playstore </li>
-                <li class="scroll-item text-end"> Revolution </li>
-                <li class="scroll-item text-end">algorithms</li>
-                <li class="scroll-item text-end">and UI design</li>
-                <li class="scroll-item text-end">Footer headline</li>
-                <li class="scroll-item text-end">In Furniture Industry</li>
-                <li class="scroll-item text-end">Countries</li>
-.
-              </ul>
-            </div>
+              <path
+                id="Opaque_Ring"
+                class="transrgwht"
+                stroke-dasharray="0,1000"
+                style="
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                  stroke-dasharray: 0, 1000;
+                "
+                d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+                  c-47.8,0-91-19.4-122.3-50.7"
+              ></path>
+
+              <g id="Dots1" class="dots-nav">
+                <g>
+                  <path
+                    class="dotsst dotsfill1"
+                    style="fill: var(--ball-color); opacity: 1"
+                    d="M84,80 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"
+                  ></path>
+                </g>
+                <g>
+                  <path
+                    class="dotsstro"
+                    style="
+                      opacity: 1;
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-width: 2;
+                      stroke-miterlimit: 10;
+                    "
+                    d="M84,80c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"
+                  ></path>
+                </g>
+              </g>
+              <g id="Dots2" class="dots-nav">
+                <g>
+                  <path
+                    class="dotsst dotsfill2"
+                    style="fill: rgba(255,255,255,0.4); opacity: 1"
+                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"
+                  ></path>
+                </g>
+                <g>
+                  <path
+                    class="dotsstro"
+                    style="
+                      opacity: 0.4;
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-width: 2;
+                      stroke-miterlimit: 10;
+                    "
+                    d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"
+                  ></path>
+                </g>
+              </g>
+              <g id="Dots3" class="dots-nav">
+                <g>
+                  <path
+                    class="dotsst dotsfill3"
+                    style="fill: rgba(255,255, 255,0.4); opacity: 1"
+                    d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"
+                  ></path>
+                </g>
+                <g>
+                  <path
+                    class="dotsstro"
+                    style="
+                      opacity: 0.4;
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-width: 2;
+                      stroke-miterlimit: 10;
+                    "
+                    d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"
+                  ></path>
+                </g>
+              </g>
+              <g id="Dots4" class="dots-nav">
+                <g>
+                  <path
+                    class="dotsst dotsfill4"
+                    style="fill: rgba(255, 255, 255,0.4); opacity: 1"
+                    d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"
+                  ></path>
+                </g>
+                <g>
+                  <path
+                    class="dotsstro"
+                    style="
+                      opacity: 0.4;
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-width: 2;
+                      stroke-miterlimit: 10;
+                    "
+                    d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"
+                  ></path>
+                </g>
+              </g>
+              <g id="Dots5" class="dots-nav">
+                <g>
+                  <path
+                    class="dotsst dotsfill5"
+                    style="fill: rgba(255, 255, 255,0.4); opacity: 1"
+                    d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"
+                  ></path>
+                </g>
+                <g>
+                  <path
+                    class="dotsstro"
+                    style="
+                      opacity: 0.4;
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-width: 2;
+                      stroke-miterlimit: 10;
+                    "
+                    d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"
+                  ></path>
+                </g>
+              </g>
+              <g id="Dots6" class="dots-nav">
+                <g>
+                  <path
+                    class="dotsst dotsfill6"
+                    style="fill: rgb(255, 255, 255,0.4); opacity: 1"
+                    d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"
+                  ></path>
+                </g>
+                <g>
+                  <path
+                    class="dotsstro"
+                    style="
+                      opacity: 0.4;
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-width: 2;
+                      stroke-miterlimit: 10;
+                    "
+                    d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"
+                  ></path>
+                </g>
+              </g>
+              <g id="Dots7" class="dots-nav">
+                <g>
+                  <path
+                    class="dotsst dotsfill7"
+                    style="fill: rgba(255, 255, 255,0.4); opacity: 1"
+                    d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"
+                  ></path>
+                </g>
+                <g>
+                  <path
+                    class="dotsstro"
+                    style="
+                      opacity: 0.4;
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-width: 2;
+                      stroke-miterlimit: 10;
+                    "
+                    d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"
+                  ></path>
+                </g>
+              </g>
+            </svg>
           </div>
-
-          <div class="bottom-left">
-            <ul class='ABC'>
-              <li class='scroll-item large'>ABC 123</li>
-              <li class='scroll-item large'>ABC 234</li>
-              <li class='scroll-item large'>ABC 345</li>
-              <li class='scroll-item large'>ABC 456</li>
-              <li class='scroll-item large'>ABC 567</li>
-              <li class='scroll-item large'>ABC 678</li>
-              <li class='scroll-item large'>ABC 23478</li>
+        <div class="circle">
+          <div class="text-slider">
+            <ul class="medium-container align-center">
+              <li class="scroll-item medium">&nbsp;</li>
+              <li class="scroll-item medium">The next big</li>
+              <li class="scroll-item medium">Powered by advance</li>
+              <li class="scroll-item medium">Redefining</li>
+              <li class="scroll-item medium">Text Headline</li>
+              <li class="scroll-item medium">Developing ERP Solution for</li>
+              <li class="scroll-item medium">Biggest Classifieds</li>
             </ul>
-            <ul class='best-company'>
-              <li class='scroll-item medium'>We are the best web development <br/> company in the world</li>
-              <li class='scroll-item medium'>We are the best web development <br/> company in the world</li>
-              <li class='scroll-item medium'>We are the best<br/> web development company in the world</li>
-              <li class='scroll-item medium'>We are the best<br/> web development company in the world</li>
-              <li class='scroll-item medium'>We are the best AR<br/> development company in the world</li>
-              <li class='scroll-item medium'>Best since 2017<br/>We offer wide range of<br/> web development and app development</li>
-              <li class='scroll-item medium'>We are the best<br/> web development company<br/> in the world</li>
+
+            <ul class="large-container align-right">
+              <li class="scroll-item large">25M+ Downloads</li>
+              <li class="scroll-item large">Blockchain</li>
+              <li class="scroll-item large"><img src="./assets/nasa-mobile-app.png" alt=""></li>
+              <li class="scroll-item large">UX Strategy</li>
+              <li class="scroll-item large">Text Headline</li>
+              <li class="scroll-item large">Text Headline</li>
+              <li class="scroll-item large">East Asia</li>
+            </ul>
+
+            <ul class="subscript-container align-right">
+              <li class="scroll-item text-end">
+                on appstore & google playstore
+              </li>
+              <li class="scroll-item text-end">Revolution</li>
+              <li class="scroll-item text-end">algorithms</li>
+              <li class="scroll-item text-end">and UI design</li>
+              <li class="scroll-item text-end">Footer headline</li>
+              <li class="scroll-item text-end">In Furniture Industry</li>
+              <li class="scroll-item text-end">Countries</li>
+              .
             </ul>
           </div>
         </div>
-        <div class="assets">
-          <div class='img-container-0'>
-            <img class="img1" src="./assets/nexgtv-entertainment-mobile-app-development.png" alt="img" />
-            <img class='img2' src="./assets/nexgtv-mobile-app-ui-design.png" alt="img" />
-          </div>
-          <div class="img-container-1">
-            <img id="img3" src="./assets/veme-blockchain-app-developed.png" alt="img">
-            <img id="img4" src="./assets/veme-app-ui-design.png" alt="img">
-          </div>
-          <div class="img-container-2">
-            <img id="img5" src="./assets/nasa-fitness-tracking-mobile-app.png" alt="img">
-            <img id="img6" src="./assets/measure-total-body-weight-through-fitness-app.png" alt="img">
-          </div>
-          <div class="img-container-3">
-            <img id="img7" src="./assets/pizza_box.png" alt="img">
-            <img id="img8" src="./assets/domi-img1.png" alt="img">
-            <img id="img9" src="./assets/ux-strategy-for-mobile-app-devlopment.png" alt="img">
-            <img id="img10" src="./assets/dominos-bread.png" alt="img">
-            <img id="img11" src="./assets/dominos-bread1.png" alt="img">
-          </div>
-          <div class="img-container-4">
-            <img  id="img12" src="./assets/karavan-social-networking-app-screen.png" alt="img">
-            <img  id="img13" src="./assets/karavan_2.png" alt="img">
-            <img  id="img14" src="./assets/social-networking-app-case-study.png" alt="img">
-            <img  id="img15" src="./assets/karavan-social-networking-app-screen-2.png" alt="img">
-            <img  id="img16" src="./assets/developers-for-social-media-app.png" alt="img">
-          </div>
-          <div class="img-container-5">
-            <img id="img17" src="./assets/erp-app-development-service.png" alt="img">
-          </div>
-          <div class="img-container-6">
-            <img id="img19" src="./assets/melltoo-img2.png" alt="img">
-            <img id="img18" src="./assets/melltoo-img1.png" alt="img">
-          </div>
+
+        <div class="bottom-left">
+          <ul class="ABC">
+            <li class="scroll-item large">ABC 123</li>
+            <li class="scroll-item large">ABC 234</li>
+            <li class="scroll-item large">ABC 345</li>
+            <li class="scroll-item large">ABC 456</li>
+            <li class="scroll-item large">ABC 567</li>
+            <li class="scroll-item large">ABC 678</li>
+            <li class="scroll-item large">ABC 23478</li>
+          </ul>
+          <ul class="best-company">
+            <li class="scroll-item medium">
+              We are the best web development <br />
+              company in the world
+            </li>
+            <li class="scroll-item medium">
+              We are the best web development <br />
+              company in the world
+            </li>
+            <li class="scroll-item medium">
+              We are the best<br />
+              web development company in the world
+            </li>
+            <li class="scroll-item medium">
+              We are the best<br />
+              web development company in the world
+            </li>
+            <li class="scroll-item medium">
+              We are the best AR<br />
+              development company in the world
+            </li>
+            <li class="scroll-item medium">
+              Best since 2017<br />We offer wide range of<br />
+              web development and app development
+            </li>
+            <li class="scroll-item medium">
+              We are the best<br />
+              web development company<br />
+              in the world
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="assets">
+        <div class="img-container-0">
+          <img
+            class="img1"
+            src="./assets/nexgtv-entertainment-mobile-app-development.png"
+            alt="img"
+          />
+          <img
+            class="img2"
+            src="./assets/nexgtv-mobile-app-ui-design.png"
+            alt="img"
+          />
+        </div>
+        <div class="img-container-1">
+          <img
+            id="img3"
+            src="./assets/veme-blockchain-app-developed.png"
+            alt="img"
+          />
+          <img id="img4" src="./assets/veme-app-ui-design.png" alt="img" />
+        </div>
+        <div class="img-container-2">
+          <img
+            id="img5"
+            src="./assets/nasa-fitness-tracking-mobile-app.png"
+            alt="img"
+          />
+          <img
+            id="img6"
+            src="./assets/measure-total-body-weight-through-fitness-app.png"
+            alt="img"
+          />
+        </div>
+        <div class="img-container-3">
+          <img id="img7" src="./assets/pizza_box.png" alt="img" />
+          <img id="img8" src="./assets/domi-img1.png" alt="img" />
+          <img
+            id="img9"
+            src="./assets/ux-strategy-for-mobile-app-devlopment.png"
+            alt="img"
+          />
+          <img id="img10" src="./assets/dominos-bread.png" alt="img" />
+          <img id="img11" src="./assets/dominos-bread1.png" alt="img" />
+        </div>
+        <div class="img-container-4">
+          <img
+            id="img12"
+            src="./assets/karavan-social-networking-app-screen.png"
+            alt="img"
+          />
+          <img id="img13" src="./assets/karavan_2.png" alt="img" />
+          <img
+            id="img14"
+            src="./assets/social-networking-app-case-study.png"
+            alt="img"
+          />
+          <img
+            id="img15"
+            src="./assets/karavan-social-networking-app-screen-2.png"
+            alt="img"
+          />
+          <img
+            id="img16"
+            src="./assets/developers-for-social-media-app.png"
+            alt="img"
+          />
+        </div>
+        <div class="img-container-5">
+          <img
+            id="img17"
+            src="./assets/erp-app-development-service.png"
+            alt="img"
+          />
+        </div>
+        <div class="img-container-6">
+          <img id="img19" src="./assets/melltoo-img2.png" alt="img" />
+          <img id="img18" src="./assets/melltoo-img1.png" alt="img" />
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
