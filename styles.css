@@ -388,6 +388,30 @@ min-width: 200px;
   display: flex;
   justify-content: center;
 }
+.bottom-part{
+  position: relative;
+  padding:5rem 3rem;
+}
+.bottom-part img {
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  transform: translateY(-50%);
+  width: 30%;
+  background: white;
+  border-radius: 10px;
+  min-width: 280px;
+}
+#mob-page-1{
+  outline: 2px solid var(--bg-0);
+}
+#mob-page-6{
+  outline: 2px solid var(--bg-6);
+}
+.mob-lg{
+  font-size:3.5rem;
+  font-weight: 500;
+}
 .owl-nav{
   display: none;
 }
