@@ -47,7 +47,8 @@ function handleIndexChange(idx){
 
   svgPath.style.strokeDasharray=`${pathLengths[index]},1000`
   assetSwitch(index,direction);
-
+  document.querySelector("#page-1").style.opacity=(index==0) ? 1:0;
+  document.querySelector("#page-6").style.opacity=(index==6) ? 1:0;
   // created css variables based on index
   info.style.background = `var(--bg-${index})`
   circle.style.background = `var(--bg-${index})`
