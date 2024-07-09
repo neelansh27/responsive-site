@@ -126,13 +126,13 @@ function assetSwitch(index,direction){
     case 1:
       const timeline2= gsap.timeline({duration:1})
       timeline2
-        .fromTo("#img3",{autoAlpha:0,x:0,y:100},{autoAlpha:1,x:0,y:0})
-        .fromTo("#img4",{autoAlpha:0,x:0,y:-100},{autoAlpha:1,x:0,y:0})
+        .fromTo("#img3",{autoAlpha:0,x:0,y:100},{autoAlpha:1,x:0,y:0},0.3)
+        .fromTo("#img4",{autoAlpha:0,x:0,y:-100},{autoAlpha:1,x:0,y:0},"<.2")
       break;
     case 2:
       const timeline3 = gsap.timeline({duration: 1})
       timeline3
-        .fromTo("#img5",{autoAlpha:0,x:0,y:"65%"},{autoAlpha:1,x:0,y:"53%"})
+        .fromTo("#img5",{autoAlpha:0,x:0,y:"65%"},{autoAlpha:1,x:0,y:"53%"},0.3)
         .fromTo("#img6",{autoAlpha:0,x:0,y:-100},{autoAlpha:1,x:0,y:0},"<.3")
       break
     case 3:
