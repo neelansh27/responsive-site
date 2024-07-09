@@ -17,9 +17,11 @@
 *{
   box-sizing: border-box;
 }
+
 html,body{
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 .container{
   display: flex;
@@ -28,31 +30,105 @@ html,body{
   height: 100vh;
 }
 .info {
- width: 50%;
- background: var(--bg-1);
+  position: relative;
+  flex-grow: 0.35;
+ background: var(--bg-0);
  transition: background 0.6s ease-in-out;
+}
+.circle{
+  position: absolute;
+  top: 10vh;
+  z-index: 10;
+  right: -50%;
+  transform: translateX(-60%);
+  border-radius: 50%;
+  width: 25vw;
+  display: flex;
+  background: var(--bg-0);
+  transition: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  aspect-ratio: 1/1;
+  overflow: visible;
 }
 .assets{
   background: var(--bg-secondary-0);
   flex-grow:1; 
 }
+/* .text-slider { */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   align-items: end; */
+/* } */
 ul {
   list-style: none;
   overflow: hidden;
 }
-
+/* .circle li { */
+/*   /1* justify-content: end; *1/ */
+/* } */
 li{
   color: white;
   transition: transform 1s;
-}
-.super-container{
-  height: 1.4rem;
-}
-.super-text {
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  white-space: nowrap;
 }
-.info{
-  position: relative;
+.subscript-container,.medium-container{
+  height: 2rem;
+  font-weight: 400;
+}
+.medium-container li{
+  flex-grow: 1;
+}
+.medium ,.text-end{
+  font-size: 1.4rem;
+}
+.text-slider{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  overflow: visible !important;
+}
+.text-slider ul {
+  padding: 0;
+  transform: translateX(-25%);
+}
+/* .align-left, .align-right { */
+/*   transform: translateX(-30%); */
+/* } */
+.align-center li {
+  justify-content: center !important;
+}
+.align-right li{
+  flex-grow: 1;
+  justify-content: end !important;
+}
+.ABC,.large-container{
+  height: 5rem;
+  overflow-y: hidden;
+}
+.large {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.bottom-left{
+  margin-top: 70vh;
+}
+.ABC{
+  margin: 0;
+  padding: 0;
+}
+.best-company {
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+
+}
+.best-company li{
+  height: 10vh;
+}
+.bottom-left {
+  margin-left: 3vw;
 }

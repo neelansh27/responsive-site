@@ -1,7 +1,7 @@
 const info = document.querySelector('.info')
 const assets = document.querySelector('.assets')
-const suptext= document.querySelectorAll('.super-text')
-
+const suptext= document.querySelectorAll('.scroll-item')
+const circle = document.querySelector('.circle')
 let index=1;
 
 document.addEventListener('wheel', scrollHandle);
@@ -25,6 +25,7 @@ function scrollHandle(event) {
 
   // created css variables based on index
   info.style.background = `var(--bg-${index})`
+  circle.style.background = `var(--bg-${index})`
   assets.style.background = `var(--bg-secondary-${index})`
   console.log(index);
 }
