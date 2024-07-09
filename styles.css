@@ -383,6 +383,20 @@ min-width: 200px;
   height: 50%;
   color: white;
 }
+.top-part{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.owl-nav{
+  display: none;
+}
+.owl-dots{
+  position: absolute;
+  bottom: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
 #section-0 .top-part{
   background: var(--bg-secondary-0);
 }
