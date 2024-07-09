@@ -20,6 +20,9 @@
   /* outline: 2px solid black; */
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 html,body{
   margin: 0;
   padding: 0;
@@ -31,6 +34,9 @@ html,body{
   background-color: #444;
   width: 100vw;
   height: 100vh;
+}
+.mob-container{
+  display: none;
 }
 .info {
   position: relative;
@@ -358,4 +364,77 @@ min-width: 200px;
 }
 .case-study span{
   font-size: 3rem;
+}
+.top-part{
+  display: flex;
+  position: relative;
+}
+.sec{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.sec .top-part{
+  width: 100vw;
+}
+.top-part,.bottom-part{
+  height: 50%;
+  color: white;
+}
+#section-0 .top-part{
+  background: var(--bg-secondary-0);
+}
+#section-0 .bottom-part{
+  background: var(--bg-0);
+}
+#section-1 .top-part{
+  background: var(--bg-secondary-1);
+}
+#section-1 .bottom-part{
+  background: var(--bg-1);
+}
+#section-2 .top-part{
+  background: var(--bg-secondary-2);
+}
+#section-2 .bottom-part{
+  background: var(--bg-2);
+}
+#section-3 .top-part{
+  background: var(--bg-secondary-3);
+}
+#section-3 .bottom-part{
+  background: var(--bg-3);
+}
+#section-4 .top-part{
+  background: var(--bg-secondary-4);
+}
+#section-4 .bottom-part{
+  background: var(--bg-4);
+}
+#section-5 .top-part{
+  background: var(--bg-secondary-5);
+}
+#section-5 .bottom-part{
+  background: var(--bg-5);
+}
+#section-6 .top-part{
+  background: var(--bg-secondary-6);
+}
+#section-6 .bottom-part{
+  background: var(--bg-6);
+}
+@media(max-width:1250px){
+  html,body{
+    overflow: visible;
+  }
+  .container{
+    display: none;
+  }
+  .mob-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
 }
