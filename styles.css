@@ -287,14 +287,14 @@ li{
   position: absolute;
   top: -5vh;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) !important;
 }
 
 #img15 {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%,40%);
+  transform: translate(-50%,40%) !important;
 }
 
 #img16{
@@ -406,7 +406,7 @@ min-width: 200px;
   outline: 2px solid var(--bg-6);
 }
 .mob-lg{
-  font-size:3.5rem;
+  font-size:5.5rem;
   font-weight: 500;
 }
 .owl-nav{
@@ -481,12 +481,33 @@ min-width: 200px;
   top:0;
 }
 
+#mob-img5{
+  position: absolute;
+  bottom: 0;
+  left: 10vw;
+  width: 40%;
+  transform: translateY(20%);
+  max-width: 315px;
+  min-width: 220px;
+}
+
+#mob-img6{
+  position: absolute;
+  top: 0;
+  right: 10vw;
+  width: 30%;
+  transform: translateY(-20%);
+  min-width: 170px;
+  max-width: 245px;
+}
+
 #mob-img7{
   position: absolute;
   left: 0;
   top: -6vh;
   width: 20%;
   min-width: 200px;
+  
 }
 #mob-img8 {
   position: absolute;
@@ -534,23 +555,24 @@ min-width: 200px;
 }
 #mob-img13{
   bottom: 0;
-  transform: translateY(58%);
+  transform: translateY(40%);
 }
 #mob-img12 {
   top: 0;
-  transform: translateY(-58%);
+  transform: translateY(-30%);
 }
 #mob-img14{
   position: absolute;
+  z-index: 12;
   right: 50%;
   top: 0;
-  transform: translate(70%,-30%);
+  transform: translate(70%,-10%);
 }
 #mob-img15{
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-30%,70%);
+  transform: translate(-30%,60%);
 }
 
 #mob-img16{
@@ -576,11 +598,12 @@ min-width: 200px;
 .behind{
   z-index: 1 !important;
 }
-.mob-md,.case-study-2{
-  font-size: 1.2rem;
+.mob-md{
+  font-size: 1.5rem;
 }
 .bottom-part .case-study,.bottom-part .case-study-2{
   font-weight: 500;
+  font-size: 1.5rem !important;
 }
 .case-study-2 {
   margin-top: 2rem;
@@ -602,6 +625,9 @@ background: #fc2da5;
   width: 28% !important;
   min-width: 200px !important;
 }
+.isolate{
+  isolation: isolate !important;
+}
 @media(max-width:1250px){
   html,body{
     overflow: visible;
@@ -613,5 +639,48 @@ background: #fc2da5;
     display: flex;
     margin: 0;
     padding: 0;
+  }
+  #img18{
+    width: 22%!important;
+    z-index: -1;
+    max-width: 269px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    bottom: -0.5vh !important;
+  }
+  #img19{
+    width: 30% !important;
+    min-width: 270px !important;
+    z-index: 0 !important;
+    max-width: 365px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    bottom: -0.5vh !important;
+  }
+}
+@media(min-width:700px) and (max-width:1250px){
+  #mob-img13,#mob-img14,#mob-img12,#mob-img15{
+    max-width: 257px;
+  }
+  #mob-img13{
+    bottom: 0;
+    transform: translateY(58%);
+  }
+  #mob-img12 {
+    top: 0;
+    transform: translateY(-58%);
+  }
+  #mob-img14{
+    position: absolute;
+    z-index: 12;
+    right: 50%;
+    top: 0;
+    transform: translate(70%,-30%);
+  }
+  #mob-img15{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-30%,70%);
   }
 }
