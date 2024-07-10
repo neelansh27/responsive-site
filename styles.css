@@ -365,10 +365,6 @@ min-width: 200px;
 .case-study span{
   font-size: 3rem;
 }
-.top-part{
-  display: flex;
-  position: relative;
-}
 .sec{
   display: flex;
   flex-direction: column;
@@ -394,6 +390,7 @@ min-width: 200px;
 }
 .bottom-part img {
   position: absolute;
+  z-index: 60;
   left: 2rem;
   top: 0;
   transform: translateY(-50%);
@@ -462,6 +459,148 @@ min-width: 200px;
 }
 #section-6 .bottom-part{
   background: var(--bg-6);
+}
+
+#mob-img1{
+  margin-left: -2rem;
+}
+#mob-img2{
+  margin-left: -3rem;
+}
+
+#mob-img3{
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 5vw;
+}
+#mob-img4{
+  height: 90%;
+  position: absolute;
+  right: 5vw;
+  top:0;
+}
+
+#mob-img7{
+  position: absolute;
+  left: 0;
+  top: -6vh;
+  width: 20%;
+  min-width: 200px;
+}
+#mob-img8 {
+  position: absolute;
+  left: 10vw;
+  width: 25%;
+  min-width: 200px;
+  bottom: 0;
+  transform: translateY(40%);
+}
+#mob-img9 {
+  position: absolute;
+  right: 10vw;
+  width: 25%;
+  z-index: 10;
+  min-width: 200px;
+  top: 0;
+  transform: translateY(-20%);
+}
+#mob-img10,#mob-img11{
+  position: absolute;
+  width: 22%;
+  min-width: 300;
+  right: -2vw;
+}
+
+#mob-img10b{
+  position: absolute;
+  width: 26%;
+  min-width: 300;
+  right: -4rem;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+#mob-img10{
+  top: -13vh;
+}
+#mob-img11{
+  bottom: -4vh;
+}
+
+#mob-img12,#mob-img13{
+  position: absolute;
+  left: 5vw;
+}
+#mob-img13{
+  bottom: 0;
+  transform: translateY(58%);
+}
+#mob-img12 {
+  top: 0;
+  transform: translateY(-58%);
+}
+#mob-img14{
+  position: absolute;
+  right: 50%;
+  top: 0;
+  transform: translate(70%,-30%);
+}
+#mob-img15{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-30%,70%);
+}
+
+#mob-img16{
+  position: absolute;
+  right: -4rem;
+  bottom: 40%;
+  transform: translateY(50%);
+}
+
+#mob-img17{
+  width: 100%;
+  background-size: cover;
+}
+
+#mob-img12,#mob-img13,#mob-img14,#mob-img15,#mob-img16{
+  width: 25% !important;
+  min-width: 170px;
+}
+
+#mob-img19{
+  margin-right: -4rem;
+}
+.behind{
+  z-index: 1 !important;
+}
+.mob-md,.case-study-2{
+  font-size: 1.2rem;
+}
+.bottom-part .case-study,.bottom-part .case-study-2{
+  font-weight: 500;
+}
+.case-study-2 {
+  margin-top: 2rem;
+}
+.case-study-2 span{
+  padding: 0.8rem 1rem;
+  border-radius: 30px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.type-1{
+background: #fc2da5;
+}
+.type-2{
+  background: white;
+  color: var(--bg-2)
+}
+.mob-img{
+  width: 28% !important;
+  min-width: 200px !important;
 }
 @media(max-width:1250px){
   html,body{
